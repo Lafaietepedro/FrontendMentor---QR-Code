@@ -2,6 +2,8 @@ body {
     box-sizing: border-box;
     margin: 0;
     display: flex;
+    flex: auto;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -13,6 +15,8 @@ body {
 .container {
 width: 20%;
 display: flex;
+
+flex-wrap: wrap;
 flex-direction: column;
 align-items: center;
 justify-content: center;
@@ -34,6 +38,7 @@ img {
 
 .txtBox {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -45,6 +50,11 @@ h1 {
     text-align: center;
     margin-bottom: -4px;
     color: hsl(218, 44%, 22%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: auto;
 }
 
 p {
@@ -52,4 +62,11 @@ p {
     font-size: 15px;
     text-align: center;
     color: hsl(212, 45%, 89%);
+    display: flex;
+}
+
+@media screen and (max-width:425px) {
+    .container{
+        width: 80%;
+    }
 }
